@@ -1,0 +1,108 @@
+/* ============================================================
+   Northgate Resorts — Design Tokens
+   Ported from design_handoff_parks_pm_app/design-tokens/colors_and_type.css
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
+
+:root {
+  --color-teal: #006271;
+  --color-gray: #939598;
+  --color-mist: #e4eff0;
+  --color-gold: #e2bc5c;
+
+  --color-teal-50:  #f0f8f9;
+  --color-teal-100: #d9edef;
+  --color-teal-200: #b3dadf;
+  --color-teal-300: #7cbdc5;
+  --color-teal-400: #3f96a2;
+  --color-teal-500: #1a7685;
+  --color-teal-600: #006271;
+  --color-teal-700: #00525f;
+  --color-teal-800: #004250;
+  --color-teal-900: #002e38;
+
+  --color-gold-100: #faf1d9;
+  --color-gold-200: #f3deaa;
+  --color-gold-300: #ebc97b;
+  --color-gold-400: #e2bc5c;
+  --color-gold-500: #c99e3e;
+  --color-gold-600: #a07d2b;
+  --color-gold-700: #725919;
+
+  --color-neutral-0:   #ffffff;
+  --color-neutral-50:  #f7f8f8;
+  --color-neutral-100: #eeefef;
+  --color-neutral-200: #dcdddd;
+  --color-neutral-300: #c4c5c6;
+  --color-neutral-400: #939598;
+  --color-neutral-500: #747678;
+  --color-neutral-600: #585a5c;
+  --color-neutral-700: #3f4143;
+  --color-neutral-800: #262829;
+  --color-neutral-900: #121314;
+
+  --color-bg:             var(--color-neutral-0);
+  --color-bg-muted:       var(--color-mist);
+  --color-bg-inverse:     var(--color-teal-600);
+  --color-surface:        var(--color-neutral-0);
+
+  --color-fg:             var(--color-neutral-800);
+  --color-fg-muted:       var(--color-neutral-500);
+  --color-fg-subtle:      var(--color-neutral-400);
+  --color-fg-inverse:     #ffffff;
+  --color-fg-brand:       var(--color-teal-600);
+
+  --color-border:         var(--color-neutral-200);
+  --color-border-strong:  var(--color-neutral-300);
+  --color-divider:        var(--color-neutral-100);
+
+  --color-accent:         var(--color-gold-400);
+  --color-focus:          var(--color-gold-400);
+
+  --color-success:        #2e8b57;
+  --color-success-tint:   #e6f2ea;
+  --color-warning:        #c48a17;
+  --color-danger:         #b3261e;
+  --color-danger-tint:    #fdecea;
+
+  --font-sans: "Gill Sans NR", "Gill Sans", "Gill Sans MT", "Cabin", "Segoe UI", system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(0, 46, 56, 0.06);
+  --shadow-sm: 0 2px 6px rgba(0, 46, 56, 0.08);
+  --shadow-md: 0 8px 20px rgba(0, 46, 56, 0.10);
+  --shadow-lg: 0 18px 40px rgba(0, 46, 56, 0.14);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 500ms;
+}
+
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-fg);
+  background: var(--color-neutral-50);
+}
+
+button { font-family: var(--font-sans); }
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+::selection { background: var(--color-teal-200); color: var(--color-teal-900); }
